@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — François Grosz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { background: var(--macos-dark-bg); }
+    .page-hero { background: var(--macos-dark-bg); }
+    .page-hero .section-label { color: rgba(255,255,255,0.38); }
+    .page-hero .section-title { color: #f5f5f7; }
+    .page-hero-back { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.7); border: 1px solid rgba(255,255,255,0.1); }
+    .page-hero-back:hover { background: rgba(255,255,255,0.12); color: #fff; }
+
+    #contact { background: var(--macos-dark-bg); padding-top: 20px; }
+
+    .contact-details-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 52px;
+      margin-bottom: 24px;
+    }
+
+    .contact-detail-win {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--macos-separator-d);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: background 0.2s ease, transform 0.3s cubic-bezier(0.25,0.1,0.25,1);
+    }
+    .contact-detail-win:hover { background: rgba(255,255,255,0.07); transform: translateY(-3px); }
+    .contact-detail-win .traffic-lights { border-bottom-color: var(--macos-separator-d); }
+    .contact-detail-win .mac-window-body { padding: 20px 24px 24px; }
+
+    .contact-detail-icon { font-size: 32px; margin-bottom: 12px; }
+    .contact-detail-label { font-size: var(--t-11); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.28); margin-bottom: 8px; }
+    .contact-detail-value { font-size: var(--t-17); font-weight: 500; color: #f5f5f7; }
+    .contact-detail-value a { color: var(--accent-light); text-decoration: none; transition: opacity 0.2s ease; }
+    .contact-detail-value a:hover { opacity: 0.75; }
+    .contact-detail-sub { font-size: var(--t-13); color: rgba(255,255,255,0.35); margin-top: 4px; }
+
+    .contact-cta-win {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--macos-separator-d);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+    }
+    .contact-cta-win .traffic-lights { border-bottom-color: var(--macos-separator-d); }
+    .contact-cta-win .mac-window-body { padding: 48px; text-align: center; }
+
+    .dock { background: rgba(30,30,30,0.82); border-color: rgba(255,255,255,0.1); }
+    .dock-item-label { color: rgba(255,255,255,0.45); }
+    .dock-item:hover { background: rgba(255,255,255,0.08); }
+
+    footer { background: #161616; }
+  </style>
+</head>
+<body>
+
+  <!-- MENUBAR -->
+  <div class="menubar">
+    <span class="menubar-apple">&#63743;</span>
+    <span class="menubar-item bold">François Grosz</span>
+    <a href="index.html" class="menubar-item">À propos</a>
+    <a href="experience.html" class="menubar-item">Expérience</a>
+    <a href="contact.html" class="menubar-item active">Contact</a>
+    <div class="menubar-right">
+      <span>🔋 100%</span>
+      <span id="menubar-time">--:--</span>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <a href="index.html" class="page-hero-back">← Accueil</a>
+      <div>
+        <p class="section-label">Contact</p>
+        <h1 class="section-title" style="font-size:clamp(36px,5vw,56px);">Construisons quelque<br>chose ensemble.</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="contact-details-grid">
+
+        <div class="contact-detail-win">
+          <div class="traffic-lights">
+            <span class="tl tl-red"></span><span class="tl tl-yellow"></span><span class="tl tl-green"></span>
+            <span class="window-title d">Email</span>
+          </div>
+          <div class="mac-window-body">
+            <div class="contact-detail-icon">✉️</div>
+            <div class="contact-detail-label">Email</div>
+            <div class="contact-detail-value">
+              <a href="mailto:grosz.francois.pro@gmail.com">grosz.francois.pro@gmail.com</a>
+            </div>
+            <div class="contact-detail-sub">Réponse sous 24–48h</div>
+          </div>
+        </div>
+
+        <div class="contact-detail-win">
+          <div class="traffic-lights">
+            <span class="tl tl-red"></span><span class="tl tl-yellow"></span><span class="tl tl-green"></span>
+            <span class="window-title d">LinkedIn</span>
+          </div>
+          <div class="mac-window-body">
+            <div class="contact-detail-icon">🔗</div>
+            <div class="contact-detail-label">LinkedIn</div>
+            <div class="contact-detail-value">
+              <a href="https://www.linkedin.com/in/fran%C3%A7ois-grosz-530736163/" target="_blank">François Grosz</a>
+            </div>
+            <div class="contact-detail-sub">Profil professionnel</div>
+          </div>
+        </div>
+
+        <div class="contact-detail-win">
+          <div class="traffic-lights">
+            <span class="tl tl-red"></span><span class="tl tl-yellow"></span><span class="tl tl-green"></span>
+            <span class="window-title d">Localisation</span>
+          </div>
+          <div class="mac-window-body">
+            <div class="contact-detail-icon">📍</div>
+            <div class="contact-detail-label">Localisation</div>
+            <div class="contact-detail-value" style="color:#f5f5f7;">Hénin-Beaumont</div>
+            <div class="contact-detail-sub">Hauts-de-France · France</div>
+          </div>
+        </div>
+
+        <div class="contact-detail-win">
+          <div class="traffic-lights">
+            <span class="tl tl-red"></span><span class="tl tl-yellow"></span><span class="tl tl-green"></span>
+            <span class="window-title d">Disponibilité</span>
+          </div>
+          <div class="mac-window-body">
+            <div class="contact-detail-icon">🟢</div>
+            <div class="contact-detail-label">Disponibilité</div>
+            <div class="contact-detail-value" style="color:#34c759;">Ouvert aux opportunités</div>
+            <div class="contact-detail-sub">Architecte Applicatif · Tech Lead</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA principal -->
+      <div class="contact-cta-win">
+        <div class="traffic-lights">
+          <span class="tl tl-red"></span><span class="tl tl-yellow"></span><span class="tl tl-green"></span>
+          <span class="window-title d">Nouveau message</span>
+        </div>
+        <div class="mac-window-body">
+          <p class="contact-intro">Vous avez un projet, une opportunité ou simplement envie d'échanger sur des sujets techniques ? Toujours partant pour un bon challenge.</p>
+          <div class="contact-links">
+            <a href="mailto:grosz.francois.pro@gmail.com" class="contact-link mail">✉️ &nbsp;Envoyer un email</a>
+            <a href="https://www.linkedin.com/in/fran%C3%A7ois-grosz-530736163/" target="_blank" class="contact-link linkedin">🔗 &nbsp;Voir mon LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer><p>© 2025 François Grosz — Tous droits réservés</p></footer>
+
+  <!-- DOCK -->
+  <nav class="dock">
+    <a href="index.html" class="dock-item"><span class="dock-item-icon">🏠</span><span class="dock-item-label">Accueil</span></a>
+    <a href="experience.html" class="dock-item"><span class="dock-item-icon">💼</span><span class="dock-item-label">Expérience</span></a>
+    <div class="dock-separator"></div>
+    <a href="contact.html" class="dock-item active"><span class="dock-item-icon">✉️</span><span class="dock-item-label">Contact</span></a>
+  </nav>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      document.getElementById('menubar-time').textContent =
+        String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0');
+    }
+    updateClock(); setInterval(updateClock, 10000);
+  </script>
+</body>
+</html>
